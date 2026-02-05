@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Rhyan Sena | Designer Multimídia</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ffffff",
+                        "accent": "#2b6cee",
+                        "background-dark": "#0a0a0a",
+                        "surface-dark": "#141414",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(43, 108, 238, 0.15) 0%, transparent 70%);
+        }
+        .border-thin {
+            border-width: 0.5px;
+        }
+    </style>
+</head>
+
+<body class="bg-background-dark text-white selection:bg-accent selection:text-white">
+    <div class="relative flex min-h-screen w-full flex-col">
+        <header class="fixed top-0 z-50 w-full border-b border-white/10 bg-background-dark/80 backdrop-blur-xl">
+            <div class="max-w-[1440px] mx-auto px-6 lg:px-12 py-5 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <span class="text-xl font-bold tracking-[0.2em] uppercase">Rhyan Sena</span>
+                </div>
+                <nav class="hidden md:flex items-center gap-10">
+                    <a class="text-xs font-bold uppercase tracking-widest hover:text-accent transition-colors"
+                        href="#inicio">Início</a>
+                    <a class="text-xs font-bold uppercase tracking-widest hover:text-accent transition-colors"
+                        href="#projetos">Projetos</a>
+                    <a class="text-xs font-bold uppercase tracking-widest hover:text-accent transition-colors"
+                        href="#para-quem">Para Quem</a>
+                    <a class="text-xs font-bold uppercase tracking-widest hover:text-accent transition-colors"
+                        href="#contato">Contato</a>
+                </nav>
+                <a class="hidden sm:block border border-white px-6 py-2 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all"
+                    href="#contato">
+                    Vamos Conversar
+                </a>
+            </div>
+        </header>
+        <main class="flex-1">
+            <section class="relative min-h-screen flex items-center pt-20 overflow-hidden hero-gradient" id="inicio">
+                <div class="max-w-[1440px] mx-auto px-6 lg:px-12 w-full grid lg:grid-cols-2 items-center gap-16">
+                    <div class="space-y-8 z-10">
+                        <div class="inline-block px-3 py-1 border border-accent/30 bg-accent/5">
+                            <span class="text-accent text-[10px] font-bold uppercase tracking-[0.3em]">Disponível para
+                                projetos</span>
+                        </div>
+                        <h1 class="text-7xl lg:text-9xl font-bold leading-[0.9] tracking-tighter uppercase">
+                            Rhyan<br />Sena
+                        </h1>
+                        <p class="text-xl lg:text-2xl text-slate-400 font-light max-w-md">
+                            Designer Multimídia. Transformando conceitos em experiências visuais de alto impacto.
+                        </p>
+                        <div class="flex flex-wrap gap-6 pt-4">
+                            <a class="group flex items-center gap-3 text-sm font-bold uppercase tracking-widest"
+                                href="#projetos">
+                                <span
+                                    class="bg-white text-black size-12 flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-all duration-300">
+                                    <span class="material-symbols-outlined">arrow_downward</span>
+                                </span>
+                                Ver Portfólio
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative flex justify-center lg:justify-end">
+                        <div class="relative size-[350px] lg:size-[550px]">
+                            <div class="absolute inset-0 bg-accent/20 blur-[100px] rounded-full animate-pulse"></div>
+                            <div class="relative h-full w-full border border-white/10 bg-surface-dark overflow-hidden">
+                                <div
+                                    class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1633167606207-d840b5070fc2?q=80&amp;w=1000&amp;auto=format&amp;fit=crop')] bg-cover bg-center mix-blend-screen opacity-40">
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-tr from-background-dark via-transparent to-transparent">
+                                </div>
+                                <div class="absolute top-10 right-10 size-20 border border-white/20 rotate-45"></div>
+                                <div class="absolute bottom-1/4 -left-5 h-px w-32 bg-accent/50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-32 bg-background-dark border-t border-white/5" id="projetos">
+                <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+                        <div class="max-w-xl">
+                            <h2 class="text-5xl font-bold tracking-tighter uppercase mb-6">Projetos Selecionados</h2>
+                            <div class="h-1 w-20 bg-accent"></div>
+                        </div>
+                        <p class="text-slate-400 text-sm tracking-widest uppercase">Trabalhos Multimídia / 2025
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10 border border-white/10">
+                        <div class="group relative aspect-[4/3] bg-background-dark overflow-hidden cursor-pointer">
+                            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110 opacity-70"
+                                style='background-image: url("imagensProjetos/saviolopeslifestyle.png");'>
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-black/60 group-hover:bg-accent/40 transition-colors duration-500">
+                            </div>
+                            <div
+                                class="absolute bottom-0 left-0 w-full p-10 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <p class="text-accent text-xs font-bold uppercase tracking-[0.3em] mb-2">Editor de Fotos
+                                    e Vídeos</p>
+                                <h3 class="text-3xl font-bold uppercase tracking-tight"></h3>
+                                <div class="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                    <span class="material-symbols-outlined text-4xl">arrow_right_alt</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group relative aspect-[4/3] bg-background-dark overflow-hidden cursor-pointer">
+                            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110 opacity-70"
+                                style='background-image: url("imagensProjetos/saviocumbuco.jpg");'></div>
+                            <div
+                                class="absolute inset-0 bg-black/40 group-hover:bg-accent/40 transition-colors duration-500">
+                            </div>
+                            <div
+                                class="absolute bottom-0 left-0 w-full p-10 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <p class="text-accent text-xs font-bold uppercase tracking-[0.3em] mb-2">Lifestyle
+                                    Photography</p>
+                                <h3 class="text-3xl font-bold uppercase tracking-tight"></h3>
+                                <div class="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                    <span class="material-symbols-outlined text-4xl">arrow_right_alt</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group relative aspect-[4/3] bg-background-dark overflow-hidden cursor-pointer">
+                            <div
+                                class="absolute inset-0 bg-white/5 flex flex-col items-center justify-center transition-transform duration-1000 group-hover:scale-105">
+                                <div class="relative w-48 h-24 mb-6">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-full blur-2xl opacity-20">
+                                    </div>
+                                    <div class="absolute inset-0 flex items-center justify-center">
+                                        <svg class="w-full h-full fill-none stroke-accent stroke-[1.5]"
+                                            viewBox="0 0 100 50">
+                                            <path class="opacity-50" d="M10,25 C20,10 40,10 50,25 C60,40 80,40 90,25">
+                                                <animate attributeName="d" dur="5s" repeatCount="indefinite"
+                                                    values="M10,25 C20,10 40,10 50,25 C60,40 80,40 90,25; M10,25 C20,40 40,40 50,25 C60,10 80,10 90,25; M10,25 C20,10 40,10 50,25">
+                                                </animate>
+                                            </path>
+                                            <path class="opacity-80" d="M10,30 C20,15 40,15 50,30 C60,45 80,45 90,30">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <span class="text-xl font-bold tracking-[0.4em] uppercase text-white">WAVE
+                                        DESIGN</span>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-black/60 group-hover:bg-accent/40 transition-colors duration-500">
+                            </div>
+                            <div
+                                class="absolute bottom-0 left-0 w-full p-10 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <p class="text-accent text-xs font-bold uppercase tracking-[0.3em] mb-2">Brand Motion
+                                </p>
+                                <h3 class="text-3xl font-bold uppercase tracking-tight"></h3>
+                                <div class="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                    <span class="material-symbols-outlined text-4xl">arrow_right_alt</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group relative aspect-[4/3] bg-background-dark overflow-hidden cursor-pointer">
+                            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110 opacity-70"
+                                style='background-image: url("imagensProjetos/logoCsvClinica.png");'>
+                            </div>
+                            <div
+                                class="absolute inset-0 bg-black/40 group-hover:bg-accent/40 transition-colors duration-500">
+                            </div>
+                            <div
+                                class="absolute bottom-0 left-0 w-full p-10 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <p class="text-accent text-xs font-bold uppercase tracking-[0.3em] mb-2">Logomarcas
+                                </p>
+                                <h3 class="text-3xl font-bold uppercase tracking-tight"></h3>
+                                <div class="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                    <span class="material-symbols-outlined text-4xl">arrow_right_alt</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-32 bg-surface-dark relative overflow-hidden" id="para-quem">
+                <div class="max-w-[1440px] mx-auto px-6 lg:px-12 relative z-10">
+                    <div class="text-center mb-24">
+                        <p class="text-accent font-bold text-xs uppercase tracking-[0.4em] mb-4">Especialidade</p>
+                        <h2 class="text-5xl lg:text-6xl font-bold uppercase tracking-tighter">Para quem eu crio?</h2>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-12 lg:gap-24">
+                        <div
+                            class="flex flex-col gap-6 p-8 border border-white/5 hover:border-accent/30 transition-colors bg-background-dark/50">
+                            <span class="material-symbols-outlined text-accent text-5xl">business_center</span>
+                            <h3 class="text-2xl font-bold uppercase tracking-tight">Marcas &amp; Empresas</h3>
+                            <p class="text-slate-400 font-light leading-relaxed">
+                                Desenvolvimento de identidades visuais dinâmicas e peças de comunicação que elevam o
+                                posicionamento no mercado.
+                            </p>
+                        </div>
+                        <div
+                            class="flex flex-col gap-6 p-8 border border-white/5 hover:border-accent/30 transition-colors bg-background-dark/50">
+                            <span class="material-symbols-outlined text-accent text-5xl">rocket_launch</span>
+                            <h3 class="text-2xl font-bold uppercase tracking-tight">Agências de Criatividade</h3>
+                            <p class="text-slate-400 font-light leading-relaxed">
+                                Criação de logomarcas e peças gráficas exclusivas para projetos de agências.
+                            </p>
+                        </div>
+                        <div
+                            class="flex flex-col gap-6 p-8 border border-white/5 hover:border-accent/30 transition-colors bg-background-dark/50">
+                            <span class="material-symbols-outlined text-accent text-5xl">stream</span>
+                            <h3 class="text-2xl font-bold uppercase tracking-tight">Criadores de Conteúdo</h3>
+                            <p class="text-slate-400 font-light leading-relaxed">
+                                Editor de fotos e vídeos profissionais para criadores que buscam uma estética
+                                profissional e diferenciada.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="absolute -right-20 top-1/2 -translate-y-1/2 text-white/[0.02] text-[20rem] font-black uppercase pointer-events-none whitespace-nowrap">
+                    MULTIMEDIA
+                </div>
+            </section>
+            <section class="relative pt-32 pb-16 bg-background-dark border-t border-white/10" id="contato">
+                <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+                    <div class="grid lg:grid-cols-2 gap-20 items-start">
+                        <div class="space-y-12">
+                            <div>
+                                <h2 class="text-6xl lg:text-8xl font-bold uppercase tracking-tighter mb-8 leading-none">
+                                    Vamos criar<br /><span class="text-accent">o futuro?</span>
+                                </h2>
+                                <p class="text-slate-400 text-xl font-light max-w-md">
+                                    Estou pronto para novos desafios e colaborações de alto nível. Entre em contato
+                                    agora.
+                                </p>
+                            </div>
+                            <div class="space-y-6">
+                                <div class="group">
+                                    <p class="text-[10px] font-bold uppercase tracking-[0.3em] text-accent mb-1">E-mail
+                                    </p>
+                                    <a class="text-2xl lg:text-3xl font-medium hover:text-accent transition-colors break-all"
+                                        href="mailto:rhyannogueirasenapro@gmail.com">
+                                        rhyannogueirasenapro@gmail.com
+                                    </a>
+                                </div>
+                                <div class="group">
+                                    <p class="text-[10px] font-bold uppercase tracking-[0.3em] text-accent mb-1">
+                                        Telefone</p>
+                                    <a class="text-2xl lg:text-3xl font-medium hover:text-accent transition-colors"
+                                        href="tel:+5585985089972">
+                                        (85) 9.8508-9972
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="pt-8 border-t border-white/10">
+                                <p class="text-slate-500 text-xs leading-relaxed uppercase tracking-widest">
+                                    Localizado em Fortaleza, Ceará.<br />Disponível para trabalho remoto.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+                        <div class="flex items-center gap-4">
+                        </div>
+                        <div class="flex gap-10">
+                            <a class="text-[10px] font-bold uppercase tracking-[0.2em] hover:text-accent transition-colors"
+                                href="#inicio">Voltar ao Topo</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
